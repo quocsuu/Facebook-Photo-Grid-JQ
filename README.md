@@ -2,7 +2,7 @@
 
 Images grid jQuery plugin
 
-[Demo](https://taras-d.github.io/images-grid)
+[Demo](https://quocsuu.github.io/Facebook-Photo-Grid-JQ/)
 
 ## Usage
 Add Images grid plugin to html page
