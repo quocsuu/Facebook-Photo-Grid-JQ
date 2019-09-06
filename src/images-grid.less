@@ -124,11 +124,27 @@
         top: 10px;
         width: 35px;
         height: 35px;
-        background-image: url(img/imgs-grid-icons.png);
-        background-repeat: no-repeat;
-        background-position: -100px;
+        transition: .2s;
+        &::after{
+            content: "\e681";
+            font-family: 'Pe-icon-7-stroke';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            color: #fff;
+            font-size: 2rem;
+            transition: .2s;
+        }
         &:hover {
-            cursor: pointer;
+            &::after{
+                transform: rotate(180deg);
+                cursor: pointer;
+                color: rgba(255, 255, 255, 0.274);
+                // transform: rotate(180deg);
+            }
         }
     }
     .modal-inner {
@@ -155,13 +171,51 @@
                 margin: 0 auto;
                 height: 100%;
                 width: 40px;
-                background-repeat: no-repeat;
-                background-image: url(img/imgs-grid-icons.png);
+                position: relative;
+                color: #fff;
                 &.left {
-                    background-position: 2px center;
+                    &::after{
+                        content: "\e687";
+                        font-family: 'Pe-icon-7-stroke';
+                        speak: none;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-variant: normal;
+                        text-transform: none;
+                        line-height: 1;
+                        font-size: 3rem;
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(0 , -50%);
+                        transition: all .2s;
+                    }
+                    &:hover{
+                        &::after{
+                            color: rgba(255, 255, 255, 0.274);
+                        }
+                    }
                 }
                 &.right {
-                    background-position: -42px center;
+                    &::after{
+                        content: "\e685";
+                        font-family: 'Pe-icon-7-stroke';
+                        speak: none;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-variant: normal;
+                        text-transform: none;
+                        line-height: 1;
+                        font-size: 3rem;
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(0 , -50%);
+                        transition: all .2s;
+                    }
+                    &:hover{
+                        &::after{
+                            color: rgba(255, 255, 255, 0.274);
+                        }
+                    }
                 }
             }
         }
@@ -233,7 +287,6 @@
                 vertical-align: middle;
                 overflow: hidden;
                 position: relative;
-               
                 &:hover {
                     cursor: pointer;
                     &::after{
@@ -248,7 +301,7 @@
                     background: rgba(255, 255, 255, 0.34901960784313724);
                     width: 100%;
                     height: 100%;
-                    
+                    transition: .2s
                 }
                 &.selected {
                     &::after{
